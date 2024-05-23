@@ -1,0 +1,14 @@
+sky130_ef_ip__analog_switches
+
+Collection of analog switch circuits for general-purpose use.
+The collection includes:
+
+	Simple analog switch (on/off)
+	Ground-isolated analog switch (on/off)
+	Ground-isolated analog switch with independent inputs (on/hiZ/ground)
+	Analog 2-input multiplexer (two ground-isolated switches)
+	Power pMOS switch
+
+Designed by:  Tim Edwards
+Efabless Corporation
+May 23, 2024
