@@ -1,0 +1,251 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1716604942
+<< dnwell >>
+rect 687 133 4884 1461
+rect 687 127 2073 133
+<< nwell >>
+rect 577 1255 4993 1570
+rect 577 462 773 1255
+rect 577 339 784 462
+rect 4678 339 4993 1255
+rect 577 24 4993 339
+<< mvnsubdiff >>
+rect 644 1484 4927 1504
+rect 644 1450 724 1484
+rect 4847 1450 4927 1484
+rect 644 1430 4927 1450
+rect 644 1424 718 1430
+rect 644 170 664 1424
+rect 698 170 718 1424
+rect 644 164 718 170
+rect 4853 1424 4927 1430
+rect 4853 170 4873 1424
+rect 4907 170 4927 1424
+rect 4853 164 4927 170
+rect 644 144 4927 164
+rect 644 110 724 144
+rect 4847 110 4927 144
+rect 644 90 4927 110
+<< mvnsubdiffcont >>
+rect 724 1450 4847 1484
+rect 664 170 698 1424
+rect 4873 170 4907 1424
+rect 724 110 4847 144
+<< locali >>
+rect 664 1450 724 1484
+rect 4847 1450 4907 1484
+rect 664 1424 4907 1450
+rect 698 1348 4873 1424
+rect 698 1263 885 1348
+rect 3160 1276 4628 1286
+rect 698 1255 2954 1263
+rect 698 1220 1066 1255
+rect 2929 1220 2954 1255
+rect 698 1169 2954 1220
+rect 3160 1230 3182 1276
+rect 4610 1230 4628 1276
+rect 3160 1196 4628 1230
+rect 698 244 885 1169
+rect 3160 379 4663 441
+rect 3160 342 3203 379
+rect 4440 342 4663 379
+rect 3160 324 4663 342
+rect 4722 244 4873 1348
+rect 698 170 4873 244
+rect 664 144 4907 170
+rect 664 110 724 144
+rect 4847 110 4907 144
+<< viali >>
+rect 1066 1220 2929 1255
+rect 3182 1230 4610 1276
+rect 3203 342 4440 379
+<< metal1 >>
+rect 2981 1390 3048 1566
+rect 850 1264 2968 1332
+rect 849 1255 2968 1264
+rect 849 1220 1066 1255
+rect 2929 1220 2968 1255
+rect 849 1186 2968 1220
+rect 1035 1046 1285 1092
+rect 1619 1046 2185 1095
+rect 2519 1046 2769 1095
+rect 3008 1074 3048 1390
+rect 3088 1386 3156 1567
+rect 1065 564 1093 1046
+rect 1224 564 1252 1046
+rect 1649 567 1677 1046
+rect 1807 567 1835 1046
+rect 1967 567 1995 1046
+rect 2125 567 2153 1046
+rect 2549 567 2577 1046
+rect 2709 567 2737 1046
+rect 1035 520 1285 564
+rect 1619 520 2185 567
+rect 2519 520 2769 567
+rect 3088 514 3124 1386
+rect 3160 1276 4681 1332
+rect 3160 1230 3182 1276
+rect 4610 1230 4681 1276
+rect 3160 1186 4681 1230
+rect 3378 520 3406 1067
+rect 3770 1029 4020 1075
+rect 3804 568 3832 1029
+rect 3962 568 3990 1029
+rect 3770 520 4020 568
+rect 4388 520 4416 1067
+rect 832 379 4663 430
+rect 832 342 3203 379
+rect 4440 342 4663 379
+rect 832 284 4663 342
+<< metal2 >>
+rect 964 1074 4469 1114
+rect 4519 1016 4695 1024
+rect 965 824 4695 1016
+rect 4518 784 4519 790
+rect 4518 776 4696 784
+rect 965 584 4696 776
+rect 964 512 4469 552
+use iso_switch_via  iso_switch_via_0
+timestamp 1716604942
+transform 0 -1 581 -1 0 1205
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_1
+timestamp 1716604942
+transform 1 0 1373 0 -1 -1900
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_2
+timestamp 1716604942
+transform -1 0 4586 0 -1 -1914
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_3
+timestamp 1716604942
+transform 1 0 1533 0 -1 -2126
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_4
+timestamp 1716604942
+transform 1 0 1211 0 -1 -2124
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_5
+timestamp 1716604942
+transform 1 0 897 0 -1 -2126
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_6
+timestamp 1716604942
+transform 1 0 633 0 -1 -2126
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_7
+timestamp 1716604942
+transform 1 0 471 0 -1 -2126
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_8
+timestamp 1716604942
+transform 1 0 1797 0 -1 -1904
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_9
+timestamp 1716604942
+transform 1 0 2113 0 -1 -1904
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_10
+timestamp 1716604942
+transform 1 0 1955 0 -1 -1904
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_11
+timestamp 1716604942
+transform 1 0 1053 0 -1 -1898
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_12
+timestamp 1716604942
+transform 0 -1 1596 -1 0 1205
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_13
+timestamp 1716604942
+transform 0 1 5776 1 0 410
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_23
+timestamp 1716604942
+transform -1 0 4746 0 -1 -2120
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_24
+timestamp 1716604942
+transform -1 0 4424 0 -1 -2120
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_25
+timestamp 1716604942
+transform -1 0 5010 0 -1 -2124
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_26
+timestamp 1716604942
+transform -1 0 4160 0 -1 -1916
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_27
+timestamp 1716604942
+transform -1 0 4002 0 -1 -1914
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_29
+timestamp 1716604942
+transform -1 0 5170 0 -1 -2124
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_38
+timestamp 1716604942
+transform 1 0 313 0 -1 -2126
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_41
+timestamp 1716604942
+transform 0 -1 -1671 -1 0 1799
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_43
+timestamp 1716604942
+transform 0 1 5872 1 0 -172
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_44
+timestamp 1716604942
+transform 0 -1 1087 -1 0 1799
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_45
+timestamp 1716604942
+transform 0 -1 -151 -1 0 1799
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_47
+timestamp 1716604942
+transform 0 -1 -910 -1 0 1207
+box 652 -2914 724 -2722
+use sky130_fd_pr__nfet_g5v0d10v5_E7BQJJ  XM1 paramcells
+timestamp 1716604942
+transform -1 0 3895 0 1 797
+box -357 -458 357 458
+use sky130_fd_pr__nfet_g5v0d10v5_WSEQJ8  XM3 paramcells
+timestamp 1716604942
+transform -1 0 4400 0 1 797
+box -278 -458 278 458
+use sky130_fd_pr__nfet_g5v0d10v5_WSEQJ8  XM5
+timestamp 1716604942
+transform -1 0 3390 0 1 797
+box -278 -458 278 458
+use sky130_fd_pr__pfet_g5v0d10v5_KLHCT5  XM12 paramcells
+timestamp 1716604942
+transform 1 0 1902 0 1 808
+box -545 -497 545 497
+use sky130_fd_pr__pfet_g5v0d10v5_KL97Y6  XM14 paramcells
+timestamp 1716604942
+transform 1 0 1160 0 1 808
+box -387 -497 387 497
+use sky130_fd_pr__pfet_g5v0d10v5_KL97Y6  XM16
+timestamp 1716604942
+transform 1 0 2644 0 1 808
+box -387 -497 387 497
+<< labels >>
+flabel metal1 849 1186 1049 1264 0 FreeSans 256 0 0 0 vdd
+port 5 nsew
+flabel metal1 832 323 1032 430 0 FreeSans 256 180 0 0 vss
+port 2 nsew
+flabel metal2 4520 584 4696 784 0 FreeSans 256 180 0 0 out
+port 3 nsew
+flabel metal2 4519 824 4695 1024 0 FreeSans 256 0 0 0 in
+port 4 nsew
+flabel metal1 3088 1386 3156 1567 0 FreeSans 256 270 0 0 off
+port 1 nsew
+flabel metal1 2981 1390 3048 1566 0 FreeSans 256 270 0 0 on
+port 0 nsew
+<< end >>
