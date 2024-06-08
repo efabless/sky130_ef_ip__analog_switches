@@ -1,13 +1,23 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1716597534
+timestamp 1717858351
+<< nwell >>
+rect 708 44 996 398
 << psubdiff >>
 rect 1144 -598 1168 -539
 rect 5332 -598 5356 -539
 << psubdiffcont >>
 rect 1168 -598 5332 -539
 << locali >>
+rect 1017 1059 1095 1082
+rect 799 971 941 985
+rect 799 921 811 971
+rect 925 921 941 971
+rect 799 908 941 921
+rect 1017 775 1028 1059
+rect 1081 775 1095 1059
+rect 1017 755 1095 775
 rect 1366 69 1574 76
 rect 1366 12 1384 69
 rect 1556 12 1574 69
@@ -24,8 +34,10 @@ rect 1152 -541 1168 -539
 rect 1152 -598 1168 -595
 rect 5332 -598 5348 -539
 << viali >>
+rect 811 921 925 971
+rect 1028 775 1081 1059
 rect 3109 661 3146 1076
-rect 3205 662 3242 1077
+rect 3206 662 3243 1077
 rect 1384 12 1556 69
 rect 4805 12 4977 69
 rect 872 -333 983 -267
@@ -40,25 +52,40 @@ rect 662 1170 1091 1189
 rect 1292 1189 5124 1302
 rect 5245 1189 5284 1302
 rect 662 1118 862 1170
+rect 1017 1059 1095 1082
+rect 799 971 941 985
+rect 799 921 811 971
+rect 925 921 941 971
+rect 799 908 941 921
+rect 830 692 875 908
+rect 1017 775 1028 1059
+rect 1081 787 1095 1059
 rect 3103 1076 3152 1089
-rect 3103 661 3109 1076
-rect 3146 661 3152 1076
-rect 3103 649 3152 661
-rect 3199 1077 3248 1090
-rect 3199 662 3205 1077
-rect 3242 662 3248 1077
-rect 3199 650 3248 662
+rect 1081 775 2096 787
+rect 1017 743 2096 775
+rect 1017 740 1095 743
+rect 3103 692 3109 1076
+rect 830 661 3109 692
+rect 3146 692 3152 1076
+rect 3200 1077 3249 1090
+rect 3146 661 3153 692
+rect 830 647 3153 661
+rect 3200 662 3206 1077
+rect 3243 662 3249 1077
+rect 3200 650 3249 662
 rect 1377 593 1597 606
 rect 1377 573 1390 593
-rect 662 328 862 471
-rect 1064 389 1390 573
+rect 774 389 1390 573
 rect 1377 370 1390 389
 rect 1583 573 1597 593
 rect 1583 389 5282 573
 rect 1583 370 1597 389
 rect 1377 356 1597 370
+rect 662 328 862 329
 rect 662 271 1276 328
 rect 2963 271 3337 328
+rect 662 129 862 271
+rect 2071 165 3392 208
 rect 1366 69 1574 76
 rect 1366 12 1384 69
 rect 1556 12 1574 69
@@ -88,8 +115,9 @@ rect 5080 -544 5286 -523
 rect 5080 -598 5105 -544
 rect 5266 -598 5286 -544
 rect 5080 -610 5286 -598
-rect 3288 -800 3335 -614
-rect 3432 -795 3479 -614
+rect 3263 -844 3310 -614
+rect 3430 -842 3477 -614
+rect 3599 -845 3647 -679
 rect 1371 -872 1574 -864
 rect 1371 -930 1385 -872
 rect 1561 -930 1574 -872
@@ -125,15 +153,18 @@ rect 1377 370 1390 593
 rect 1583 370 1597 593
 rect 1377 356 1597 370
 rect 1377 -1016 1520 356
-rect 3102 -614 3150 926
-rect 3199 -487 3247 931
+rect 2113 195 2164 773
+rect 3102 -685 3150 926
+rect 3200 -487 3248 931
+rect 3384 -354 3434 158
+rect 3384 -404 3649 -354
+rect 3200 -535 3477 -487
+rect 3429 -625 3477 -535
+rect 3599 -631 3649 -404
 rect 4799 -411 4847 15
 rect 5118 -223 5254 1179
 rect 5118 -346 5127 -223
 rect 5248 -346 5254 -223
-rect 3199 -535 3451 -487
-rect 3102 -662 3189 -614
-rect 3403 -625 3451 -535
 rect 5118 -602 5254 -346
 rect 1377 -1024 1587 -1016
 rect 1377 -1156 1387 -1024
@@ -159,11 +190,11 @@ transform 1 0 2545 0 -1 -2080
 box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_4
 timestamp 1716573125
-transform 0 1 6080 1 0 -1338
+transform 0 1 6032 1 0 -1338
 box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_5
 timestamp 1716573125
-transform 0 1 6317 1 0 -1338
+transform 0 1 4955 1 0 83
 box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_6
 timestamp 1716573125
@@ -177,6 +208,22 @@ use iso_switch_via  iso_switch_via_8
 timestamp 1716573125
 transform 0 1 8002 1 0 -1257
 box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_9
+timestamp 1716573125
+transform 0 1 6269 1 0 -1338
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_10
+timestamp 1716573125
+transform 0 1 4980 1 0 -501
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_11
+timestamp 1716573125
+transform 0 1 6244 1 0 -514
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_12
+timestamp 1716573125
+transform 0 1 6509 1 0 -1337
+box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_43
 timestamp 1716573125
 transform 0 1 4047 1 0 -1257
@@ -186,9 +233,13 @@ timestamp 1716573125
 transform 0 -1 -1345 -1 0 -213
 box 652 -2914 724 -2722
 use isolated_switch_2h  isolated_switch_2h_0
-timestamp 1716596057
+timestamp 1717857855
 transform 1 0 87 0 1 -2348
 box 577 -762 5393 1570
+use sky130_fd_sc_hvl__inv_1  sky130_fd_sc_hvl__inv_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
+timestamp 1715205430
+transform 1 0 774 0 -1 1295
+box -66 -43 354 897
 use sky130_fd_sc_hvl__lsbuflv2hv_1  x2 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
 timestamp 1715205430
 transform -1 0 5286 0 1 -333
@@ -210,8 +261,6 @@ flabel metal2 5286 -2557 5486 -2357 0 FreeSans 256 0 0 0 out
 port 2 nsew
 flabel metal2 5286 -1525 5486 -1325 0 FreeSans 256 0 0 0 in
 port 3 nsew
-flabel metal1 662 271 862 471 0 FreeSans 256 0 0 0 dvdd
-port 5 nsew
 flabel metal1 662 1118 862 1318 0 FreeSans 256 0 0 0 dvss
 port 6 nsew
 flabel metal1 664 -1216 864 -1016 0 FreeSans 256 0 0 0 avdd
@@ -222,4 +271,6 @@ flabel metal1 666 -206 866 -97 0 FreeSans 256 0 0 0 on
 port 1 nsew
 flabel metal1 666 -489 866 -391 0 FreeSans 256 0 0 0 off
 port 7 nsew
+flabel metal1 662 129 862 329 0 FreeSans 256 0 0 0 dvdd
+port 5 nsew
 << end >>

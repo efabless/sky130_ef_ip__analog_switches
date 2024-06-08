@@ -173,7 +173,7 @@ lab=vss}
 N 1200 -800 1200 -740 {
 lab=vss}
 N 1290 -800 1330 -800 {
-lab=off}
+lab=iso}
 N 800 -840 850 -840 {
 lab=on}
 N 800 -1190 850 -1190 {
@@ -364,9 +364,9 @@ model=nfet_g5v0d10v5
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 1200 -740 0 0 {name=p2 sig_type=std_logic lab=vss}
-C {devices/lab_pin.sym} 1330 -800 0 1 {name=p5 sig_type=std_logic lab=off}
 C {devices/iopin.sym} 1750 -1020 0 0 {name=p8 lab=out}
 C {devices/iopin.sym} 720 -960 0 1 {name=p9 lab=vdd}
 C {devices/iopin.sym} 720 -1060 0 1 {name=p10 lab=vss}
 C {devices/iopin.sym} 720 -1020 0 1 {name=p11 lab=in}
 C {devices/ipin.sym} 800 -1190 0 0 {name=p3 lab=off}
+C {devices/ipin.sym} 1330 -800 0 1 {name=p1 lab=shunt}
