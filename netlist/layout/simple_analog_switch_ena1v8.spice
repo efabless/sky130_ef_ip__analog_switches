@@ -72,14 +72,16 @@ X0 VGND VPWR VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.19875 pd=2.03 as=0.4125 
 X1 VPWR VGND VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.265 pd=2.53 as=0.55 ps=5.1 w=1 l=1
 .ends
 
-.subckt simple_analog_switch_ena1v8 A in out avdd avss dvdd dvss on
+.subckt simple_analog_switch_ena1v8 in out avdd avss dvdd dvss on
 Xsky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0 dvss on sky130_fd_pr__diode_pw2nd_05v5_FT76RJ
-Xsky130_fd_sc_hvl__inv_2_0 simple_analog_switch_0/off dvss dvss avdd avdd A sky130_fd_sc_hvl__inv_2
+Xsky130_fd_sc_hvl__inv_2_0 simple_analog_switch_0/off dvss dvss avdd avdd simple_analog_switch_0/on
++ sky130_fd_sc_hvl__inv_2
 Xsky130_fd_sc_hvl__inv_2_1 sky130_fd_sc_hvl__inv_2_1/A dvss dvss avdd avdd simple_analog_switch_0/off
 + sky130_fd_sc_hvl__inv_2
 Xsky130_fd_sc_hvl__lsbuflv2hv_1_0 on dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_1/A
 + sky130_fd_sc_hvl__lsbuflv2hv_1
-Xsimple_analog_switch_0 A simple_analog_switch_0/off out in avdd avss simple_analog_switch
+Xsimple_analog_switch_0 simple_analog_switch_0/on simple_analog_switch_0/off out in
++ avdd avss simple_analog_switch
 Xsky130_fd_sc_hvl__decap_4_0 dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
 Xsky130_fd_sc_hvl__decap_4_1 dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
 .ends

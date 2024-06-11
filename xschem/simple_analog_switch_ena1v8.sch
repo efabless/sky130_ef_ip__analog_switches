@@ -58,8 +58,8 @@ C {devices/iopin.sym} 410 70 0 0 {name=p4 lab=in}
 C {devices/iopin.sym} 410 120 0 0 {name=p5 lab=avdd}
 C {sky130_fd_pr/diode.sym} -210 190 0 0 {name=D1
 model=diode_pw2nd_05v5
-area=2.304e11
-perim=1.92e6
+area=2.025e11
+perim=1.8e6
 spiceprefix=X
 }
 C {devices/iopin.sym} -30 250 0 0 {name=p6 lab=dvdd}
@@ -68,3 +68,4 @@ C {devices/lab_pin.sym} -70 250 0 0 {name=p8 sig_type=std_logic lab=dvdd}
 C {simple_analog_switch.sym} 200 60 0 0 {name=x3}
 C {sky130_stdcells/inv_2.sym} -50 50 0 0 {name=x1 VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
 C {sky130_stdcells/inv_2.sym} -50 -10 0 0 {name=x4 VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__ }
+C {sky130_stdcells/decap_4.sym} -60 110 0 0 {name=x5[1:0] VGND=dvss VNB=dvss VPB=avdd VPWR=avdd prefix=sky130_fd_sc_hvl__}

@@ -1,4 +1,4 @@
-Netgen 1.5.276 compiled on Fri 31 May 2024 03:07:03 PM EDT
+Netgen 1.5.273 compiled on Tue May 14 15:25:31 EDT 2024
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
 Call to undefined subcircuit sky130_fd_pr__diode_pw2nd_05v5
@@ -32,7 +32,7 @@ Creating placeholder cell definition.
 Call to undefined subcircuit simple_analog_switch
 Creating placeholder cell definition.
 
-Reading setup file /home/azwefabless/.volare/volare/sky130/versions/42cd15c469adc1d303ffca4a7d32c29a4564a737/sky130A/libs.tech/netgen/sky130A_setup.tcl
+Reading setup file /usr/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
 
 Model sky130_fd_pr__res_generic_nd__hv pin 1 == 2
 No property value found for device sky130_fd_pr__res_generic_nd__hv
@@ -292,29 +292,11 @@ Circuit simple_analog_switch_ena1v8 contains 7 device instances.
   Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   1
 Circuit contains 10 nets.
 Contents of circuit 2:  Circuit: 'simple_analog_switch_ena1v8'
-Circuit simple_analog_switch_ena1v8 contains 5 device instances.
+Circuit simple_analog_switch_ena1v8 contains 7 device instances.
   Class: simple_analog_switch  instances:   1
   Class: sky130_fd_sc_hvl__inv_2 instances:   2
   Class: sky130_fd_pr__diode_pw2nd_05v5 instances:   1
-  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   1
-Circuit contains 10 nets.
-
-Flattened mismatched instances and attempting compare again.
-
-Contents of circuit 1:  Circuit: 'simple_analog_switch_ena1v8'
-Circuit simple_analog_switch_ena1v8 contains 9 device instances.
-  Class: simple_analog_switch  instances:   1
-  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   2
-  Class: sky130_fd_sc_hvl__inv_2 instances:   2
-  Class: sky130_fd_pr__diode_pw2nd_05v5 instances:   1
-  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   1
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   2
-Circuit contains 10 nets.
-Contents of circuit 2:  Circuit: 'simple_analog_switch_ena1v8'
-Circuit simple_analog_switch_ena1v8 contains 5 device instances.
-  Class: simple_analog_switch  instances:   1
-  Class: sky130_fd_sc_hvl__inv_2 instances:   2
-  Class: sky130_fd_pr__diode_pw2nd_05v5 instances:   1
+  Class: sky130_fd_sc_hvl__decap_4 instances:   2
   Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   1
 Circuit contains 10 nets.
 
@@ -322,27 +304,28 @@ Circuit was modified by parallel/series device merging.
 New circuit summary:
 
 Contents of circuit 1:  Circuit: 'simple_analog_switch_ena1v8'
-Circuit simple_analog_switch_ena1v8 contains 7 device instances.
+Circuit simple_analog_switch_ena1v8 contains 6 device instances.
   Class: simple_analog_switch  instances:   1
-  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   1
   Class: sky130_fd_sc_hvl__inv_2 instances:   2
   Class: sky130_fd_pr__diode_pw2nd_05v5 instances:   1
+  Class: sky130_fd_sc_hvl__decap_4 instances:   1
   Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   1
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   1
 Circuit contains 10 nets.
 Contents of circuit 2:  Circuit: 'simple_analog_switch_ena1v8'
-Circuit simple_analog_switch_ena1v8 contains 5 device instances.
+Circuit simple_analog_switch_ena1v8 contains 6 device instances.
   Class: simple_analog_switch  instances:   1
   Class: sky130_fd_sc_hvl__inv_2 instances:   2
   Class: sky130_fd_pr__diode_pw2nd_05v5 instances:   1
+  Class: sky130_fd_sc_hvl__decap_4 instances:   1
   Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   1
 Circuit contains 10 nets.
 
-Circuit 1 contains 7 devices, Circuit 2 contains 5 devices. *** MISMATCH ***
+Circuit 1 contains 6 devices, Circuit 2 contains 6 devices.
 Circuit 1 contains 10 nets,    Circuit 2 contains 10 nets.
 
 
 Final result: 
-Netlists do not match.
+Circuits match uniquely.
+.
 Logging to file "simple_analog_switch_ena1v8_comp.out" disabled
 LVS Done.

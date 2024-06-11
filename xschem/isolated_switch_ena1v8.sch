@@ -43,8 +43,8 @@ C {devices/iopin.sym} 410 70 0 0 {name=p4 lab=in}
 C {devices/iopin.sym} 410 120 0 0 {name=p5 lab=avdd}
 C {sky130_fd_pr/diode.sym} -90 100 0 0 {name=D1
 model=diode_pw2nd_05v5
-area=2.304e11
-perim=1.92e6
+area=2.025e11
+perim=1.8e6
 spiceprefix=X
 }
 C {devices/iopin.sym} 90 160 0 0 {name=p6 lab=dvdd}

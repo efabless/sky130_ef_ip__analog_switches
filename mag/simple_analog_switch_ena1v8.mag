@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1717883416
+timestamp 1718126855
 << psubdiff >>
 rect 41 1640 65 1724
 rect 4354 1640 4378 1724
@@ -174,7 +174,7 @@ timestamp 1716573125
 transform -1 0 3235 0 1 4277
 box 652 -2914 724 -2722
 use simple_analog_switch  simple_analog_switch_0
-timestamp 1717881426
+timestamp 1717947042
 transform 1 0 -577 0 1 -24
 box 577 24 4993 1570
 use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0 paramcells
@@ -202,8 +202,6 @@ timestamp 1715205430
 transform 1 0 491 0 1 1977
 box -66 -43 2178 1671
 << labels >>
-flabel locali s 3041 2294 3075 2328 0 FreeSans 340 0 0 0 A
-port 1 nsew signal input
 flabel metal1 0 1162 156 1308 0 FreeSans 800 0 0 0 avdd
 port 4 nsew
 flabel metal1 0 260 156 406 0 FreeSans 800 0 0 0 avss
