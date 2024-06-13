@@ -99,12 +99,35 @@ VNB                                        |VNB
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hvl__lsbuflv2hv_1 and sky130_fd_sc_hvl__lsbuflv2hv_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hvl__inv_1         |Circuit 2: sky130_fd_sc_hvl__inv_1         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_g5v0d10v5 (1)           |sky130_fd_pr__pfet_g5v0d10v5 (1)           
+sky130_fd_pr__nfet_g5v0d10v5 (1)           |sky130_fd_pr__nfet_g5v0d10v5 (1)           
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hvl__inv_1         |Circuit 2: sky130_fd_sc_hvl__inv_1         
+-------------------------------------------|-------------------------------------------
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+A                                          |A                                          
+Y                                          |Y                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hvl__inv_1 and sky130_fd_sc_hvl__inv_1 are equivalent.
 Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_FT76RJ in circuit isolated_switch_onoff (0)(2 instances)
 Flattening unmatched subcell isolated_switch_2h in circuit isolated_switch_onoff (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_KLHCT5 in circuit isolated_switch_onoff (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_WSEQJ8 in circuit isolated_switch_onoff (0)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_KL97Y6 in circuit isolated_switch_onoff (0)(4 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_E7BQJJ in circuit isolated_switch_onoff (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_EJGQFX in circuit isolated_switch_onoff (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_EJGQJV in circuit isolated_switch_onoff (0)(1 instance)
 Flattening unmatched subcell isolated_switch_2 in circuit isolated_switch_onoff (1)(1 instance)
 
@@ -115,27 +138,24 @@ Circuit 1: isolated_switch_onoff           |Circuit 2: isolated_switch_onoff
 -------------------------------------------|-------------------------------------------
 sky130_fd_sc_hvl__lsbuflv2hv_1 (2)         |sky130_fd_sc_hvl__lsbuflv2hv_1 (2)         
 sky130_fd_pr__diode_pw2nd_05v5 (2)         |sky130_fd_pr__diode_pw2nd_05v5 (2)         
+sky130_fd_sc_hvl__inv_1 (1)                |sky130_fd_sc_hvl__inv_1 (1)                
 sky130_fd_pr__pfet_g5v0d10v5 (16->5)       |sky130_fd_pr__pfet_g5v0d10v5 (6->5)        
 sky130_fd_pr__nfet_g5v0d10v5 (9->6)        |sky130_fd_pr__nfet_g5v0d10v5 (7->6)        
-Number of devices: 15                      |Number of devices: 15                      
-Number of nets: 11                         |Number of nets: 11                         
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 12                         |Number of nets: 12                         
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
-Netlists match uniquely with property errors.
-sky130_fd_pr__diode_pw2nd_05v5_FT76RJ:XD2/sky130_fd_pr__diode_pw2nd_05v5:0 vs. sky130_fd_pr__diode_pw2nd_05v5:D1:
- area circuit1: 2.025e+11   circuit2: 2.304e+11   (delta=12.9%, cutoff=2%)
-sky130_fd_pr__diode_pw2nd_05v5_FT76RJ:XD1/sky130_fd_pr__diode_pw2nd_05v5:0 vs. sky130_fd_pr__diode_pw2nd_05v5:D2:
- area circuit1: 2.025e+11   circuit2: 2.304e+11   (delta=12.9%, cutoff=2%)
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: isolated_switch_onoff           |Circuit 2: isolated_switch_onoff           
 -------------------------------------------|-------------------------------------------
+out                                        |out                                        
+in                                         |in                                         
 avss                                       |avss                                       
 avdd                                       |avdd                                       
 dvss                                       |dvss                                       
-out                                        |out                                        
-in                                         |in                                         
 on                                         |on                                         
 dvdd                                       |dvdd                                       
 off                                        |off                                        
@@ -144,7 +164,4 @@ Cell pin lists are equivalent.
 Device classes isolated_switch_onoff and isolated_switch_onoff are equivalent.
 
 Final result: Circuits match uniquely.
-Property errors were found.
-
-The following cells had property errors:
- isolated_switch_onoff
+.

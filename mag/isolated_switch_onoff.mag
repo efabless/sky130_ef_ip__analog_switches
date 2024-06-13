@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1717858351
+timestamp 1718245830
 << nwell >>
 rect 708 44 996 398
 << psubdiff >>
@@ -173,69 +173,69 @@ rect 1377 -1162 1587 -1156
 rect 5149 -1525 5486 -1325
 rect 5149 -2557 5486 -2357
 use iso_switch_via  iso_switch_via_0
-timestamp 1716573125
+timestamp 1718245724
 transform 1 0 2545 0 -1 -1827
 box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_1
-timestamp 1716573125
+timestamp 1718245724
 transform 1 0 2428 0 -1 -2080
 box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_2
-timestamp 1716573125
+timestamp 1718245724
 transform 1 0 2428 0 -1 -1828
 box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_3
-timestamp 1716573125
+timestamp 1718245724
 transform 1 0 2545 0 -1 -2080
 box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_4
-timestamp 1716573125
+timestamp 1718245724
 transform 0 1 6032 1 0 -1338
 box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_5
-timestamp 1716573125
+timestamp 1718245724
 transform 0 1 4955 1 0 83
 box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_6
-timestamp 1716573125
+timestamp 1718245724
 transform 0 1 7706 1 0 -648
 box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_7
-timestamp 1716573125
+timestamp 1718245724
 transform 0 1 7701 1 0 -1129
 box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_8
-timestamp 1716573125
+timestamp 1718245724
 transform 0 1 8002 1 0 -1257
 box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_9
-timestamp 1716573125
+timestamp 1718245724
 transform 0 1 6269 1 0 -1338
 box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_10
-timestamp 1716573125
+timestamp 1718245724
 transform 0 1 4980 1 0 -501
 box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_11
-timestamp 1716573125
+timestamp 1718245724
 transform 0 1 6244 1 0 -514
 box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_12
-timestamp 1716573125
+timestamp 1718245724
 transform 0 1 6509 1 0 -1337
 box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_43
-timestamp 1716573125
+timestamp 1718245724
 transform 0 1 4047 1 0 -1257
 box 652 -2914 724 -2722
 use iso_switch_via  iso_switch_via_45
-timestamp 1716573125
+timestamp 1718245724
 transform 0 -1 -1345 -1 0 -213
 box 652 -2914 724 -2722
 use isolated_switch_2h  isolated_switch_2h_0
-timestamp 1717857855
+timestamp 1718245724
 transform 1 0 87 0 1 -2348
-box 577 -762 5393 1570
+box 573 -762 5397 1570
 use sky130_fd_sc_hvl__inv_1  sky130_fd_sc_hvl__inv_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
 timestamp 1715205430
 transform 1 0 774 0 -1 1295
@@ -249,11 +249,11 @@ timestamp 1715205430
 transform 1 0 1062 0 1 -333
 box -66 -43 2178 1671
 use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  XD1 paramcells
-timestamp 1716587504
+timestamp 1718245724
 transform 1 0 854 0 1 -429
 box -183 -183 183 183
 use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  XD2
-timestamp 1716587504
+timestamp 1718245724
 transform 1 0 854 0 1 -169
 box -183 -183 183 183
 << labels >>

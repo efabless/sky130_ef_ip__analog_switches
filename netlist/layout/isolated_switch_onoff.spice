@@ -50,7 +50,7 @@ X0 a_129_n200# a_29_n297# a_n29_n200# w_n387_n497# sky130_fd_pr__pfet_g5v0d10v5 
 X1 a_n29_n200# a_n129_n297# a_n187_n200# w_n387_n497# sky130_fd_pr__pfet_g5v0d10v5 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=0.5
 .ends
 
-.subckt sky130_fd_pr__nfet_g5v0d10v5_E7BQJJ a_129_n200# a_29_n288# a_n129_n288# a_n321_n422#
+.subckt sky130_fd_pr__nfet_g5v0d10v5_EJGQFX a_129_n200# a_29_n288# a_n129_n288# a_n321_n422#
 + a_n29_n200# a_n187_n200#
 X0 a_129_n200# a_29_n288# a_n29_n200# a_n321_n422# sky130_fd_pr__nfet_g5v0d10v5 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=0.5
 X1 a_n29_n200# a_n129_n288# a_n187_n200# a_n321_n422# sky130_fd_pr__nfet_g5v0d10v5 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=0.5
@@ -61,19 +61,19 @@ X0 a_50_n100# a_n50_n188# a_n108_n100# a_n242_n322# sky130_fd_pr__nfet_g5v0d10v5
 .ends
 
 .subckt isolated_switch_2h on off out in vdd shunt vss
-XXM12 m2_965_43# off off off in off m2_965_43# m2_965_43# in vdd sky130_fd_pr__pfet_g5v0d10v5_KLHCT5
+XXM12 m2_961_43# off off off in off m2_961_43# m2_961_43# in vdd sky130_fd_pr__pfet_g5v0d10v5_KLHCT5
 XXM13 out vss out off sky130_fd_pr__nfet_g5v0d10v5_WSEQJ8
-XXM14 on on m2_965_43# m2_965_43# vdd m2_965_43# sky130_fd_pr__pfet_g5v0d10v5_KL97Y6
-XXM15 m2_965_43# vss m2_965_43# off sky130_fd_pr__nfet_g5v0d10v5_WSEQJ8
+XXM14 on on m2_961_43# m2_961_43# vdd m2_961_43# sky130_fd_pr__pfet_g5v0d10v5_KL97Y6
+XXM15 m2_961_43# vss m2_961_43# off sky130_fd_pr__nfet_g5v0d10v5_WSEQJ8
 XXM16 on on in in vdd in sky130_fd_pr__pfet_g5v0d10v5_KL97Y6
-XXM1 m2_965_43# on on vss in m2_965_43# sky130_fd_pr__nfet_g5v0d10v5_E7BQJJ
-XXM2 out off off off m2_965_43# off out out m2_965_43# vdd sky130_fd_pr__pfet_g5v0d10v5_KLHCT5
-XXM3 m2_965_43# vss m2_965_43# off sky130_fd_pr__nfet_g5v0d10v5_WSEQJ8
+Xsky130_fd_pr__nfet_g5v0d10v5_EJGQFX_0 out on on vss m2_961_43# out sky130_fd_pr__nfet_g5v0d10v5_EJGQFX
+XXM2 out off off off m2_961_43# off out out m2_961_43# vdd sky130_fd_pr__pfet_g5v0d10v5_KLHCT5
+XXM3 m2_961_43# vss m2_961_43# off sky130_fd_pr__nfet_g5v0d10v5_WSEQJ8
 XXM4 on on out out vdd out sky130_fd_pr__pfet_g5v0d10v5_KL97Y6
 XXM5 in vss in off sky130_fd_pr__nfet_g5v0d10v5_WSEQJ8
-XXM6 on on m2_965_43# m2_965_43# vdd m2_965_43# sky130_fd_pr__pfet_g5v0d10v5_KL97Y6
-Xsky130_fd_pr__nfet_g5v0d10v5_EJGQJV_0 vss vss m2_965_43# shunt sky130_fd_pr__nfet_g5v0d10v5_EJGQJV
-XXM11 out on on vss m2_965_43# out sky130_fd_pr__nfet_g5v0d10v5_E7BQJJ
+XXM6 on on m2_961_43# m2_961_43# vdd m2_961_43# sky130_fd_pr__pfet_g5v0d10v5_KL97Y6
+Xsky130_fd_pr__nfet_g5v0d10v5_EJGQJV_0 vss vss m2_961_43# shunt sky130_fd_pr__nfet_g5v0d10v5_EJGQJV
+XXM11 m2_961_43# on on vss in m2_961_43# sky130_fd_pr__nfet_g5v0d10v5_EJGQFX
 .ends
 
 .subckt isolated_switch_onoff avss on out in avdd dvdd dvss off

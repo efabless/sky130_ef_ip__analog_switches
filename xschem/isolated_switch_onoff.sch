@@ -72,8 +72,8 @@ C {devices/iopin.sym} 410 50 0 0 {name=p4 lab=in}
 C {devices/iopin.sym} 410 100 0 0 {name=p5 lab=avdd}
 C {sky130_fd_pr/diode.sym} -230 90 0 0 {name=D1
 model=diode_pw2nd_05v5
-area=2.304e11
-perim=1.92e6
+area=2.025e11
+perim=1.8e6
 spiceprefix=X
 }
 C {devices/iopin.sym} 210 160 0 0 {name=p6 lab=dvdd}
@@ -84,8 +84,8 @@ C {lsbuflv2hv_1.sym} -170 220 0 0 {name=x3 LVPWR=dvdd VGND=dvss VNB=dvss VPB=avd
 C {devices/ipin.sym} -260 220 0 0 {name=p11 lab=off}
 C {sky130_fd_pr/diode.sym} -230 290 0 0 {name=D2
 model=diode_pw2nd_05v5
-area=2.304e11
-perim=1.92e6
+area=2.025e11
+perim=1.8e6
 spiceprefix=X
 }
 C {devices/lab_pin.sym} -200 170 0 1 {name=p12 sig_type=std_logic lab=dvss}
