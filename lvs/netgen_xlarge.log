@@ -1,15 +1,15 @@
 Netgen 1.5.273 compiled on Tue May 14 15:25:31 EDT 2024
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
-Call to undefined subcircuit sky130_fd_pr__diode_pw2nd_05v5
+Call to undefined subcircuit sky130_fd_pr__nfet_g5v0d10v5
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__pfet_g5v0d10v5
-Creating placeholder cell definition.
-Call to undefined subcircuit sky130_fd_pr__nfet_g5v0d10v5
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__nfet_01v8
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__pfet_01v8_hvt
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__diode_pw2nd_05v5
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__pfet_g5v0d10v5
 Creating placeholder cell definition.
@@ -31,7 +31,7 @@ Call to undefined subcircuit sky130_fd_pr__res_generic_pd__hv
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__diode_pw2nd_05v5
 Creating placeholder cell definition.
-Call to undefined subcircuit simple_analog_switch
+Call to undefined subcircuit isolated_switch_4
 Creating placeholder cell definition.
 
 Reading setup file /usr/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
@@ -168,42 +168,13 @@ No property value found for device sky130_fd_pr__diode_pw2nd_05v5
 No property mult found for device sky130_fd_pr__diode_pw2nd_05v5
 No property value found for device sky130_fd_pr__diode_pw2nd_11v0
 No property mult found for device sky130_fd_pr__diode_pw2nd_11v0
-Comparison output logged to file simple_analog_switch_ena1v8_comp.out
-Logging to file "simple_analog_switch_ena1v8_comp.out" enabled
-Circuit sky130_fd_pr__pfet_g5v0d10v5 contains no devices.
+Comparison output logged to file isolated_switch_xlarge_comp.out
+Logging to file "isolated_switch_xlarge_comp.out" enabled
 Circuit sky130_fd_pr__nfet_g5v0d10v5 contains no devices.
-Circuit sky130_fd_pr__diode_pw2nd_05v5 contains no devices.
+Circuit sky130_fd_pr__pfet_g5v0d10v5 contains no devices.
 Circuit sky130_fd_pr__nfet_01v8 contains no devices.
 Circuit sky130_fd_pr__pfet_01v8_hvt contains no devices.
-
-Contents of circuit 1:  Circuit: 'sky130_fd_sc_hvl__inv_2'
-Circuit sky130_fd_sc_hvl__inv_2 contains 4 device instances.
-  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   2
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   2
-Circuit contains 6 nets.
-Contents of circuit 2:  Circuit: 'sky130_fd_sc_hvl__inv_2'
-Circuit sky130_fd_sc_hvl__inv_2 contains 4 device instances.
-  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   2
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   2
-Circuit contains 6 nets.
-
-Circuit was modified by parallel/series device merging.
-New circuit summary:
-
-Contents of circuit 1:  Circuit: 'sky130_fd_sc_hvl__inv_2'
-Circuit sky130_fd_sc_hvl__inv_2 contains 2 device instances.
-  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   1
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   1
-Circuit contains 6 nets.
-Contents of circuit 2:  Circuit: 'sky130_fd_sc_hvl__inv_2'
-Circuit sky130_fd_sc_hvl__inv_2 contains 2 device instances.
-  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   1
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   1
-Circuit contains 6 nets.
-
-Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
-Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
-
+Circuit sky130_fd_pr__diode_pw2nd_05v5 contains no devices.
 
 Contents of circuit 1:  Circuit: 'sky130_fd_sc_hvl__lsbuflv2hv_1'
 Circuit sky130_fd_sc_hvl__lsbuflv2hv_1 contains 20 device instances.
@@ -242,93 +213,71 @@ Circuit 1 contains 12 devices, Circuit 2 contains 12 devices.
 Circuit 1 contains 12 nets,    Circuit 2 contains 12 nets.
 
 
-Contents of circuit 1:  Circuit: 'simple_analog_switch'
-Circuit simple_analog_switch contains 12 device instances.
-  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   4
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   8
-Circuit contains 6 nets.
-Contents of circuit 2:  Circuit: 'simple_analog_switch'
-Circuit simple_analog_switch contains 6 device instances.
+Contents of circuit 1:  Circuit: 'isolated_switch_4'
+Circuit isolated_switch_4 contains 37 device instances.
+  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:  13
+  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:  24
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'isolated_switch_4'
+Circuit isolated_switch_4 contains 5 device instances.
   Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   3
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   3
-Circuit contains 6 nets.
+  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   2
+Circuit contains 8 nets.
 
 Circuit was modified by parallel/series device merging.
 New circuit summary:
 
-Contents of circuit 1:  Circuit: 'simple_analog_switch'
-Circuit simple_analog_switch contains 6 device instances.
+Contents of circuit 1:  Circuit: 'isolated_switch_4'
+Circuit isolated_switch_4 contains 5 device instances.
   Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   3
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   3
+  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   2
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'isolated_switch_4'
+Circuit isolated_switch_4 contains 5 device instances.
+  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   3
+  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   2
+Circuit contains 8 nets.
+
+Circuit 1 contains 5 devices, Circuit 2 contains 5 devices.
+Circuit 1 contains 8 nets,    Circuit 2 contains 8 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hvl__inv_1'
+Circuit sky130_fd_sc_hvl__inv_1 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   1
+  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   1
 Circuit contains 6 nets.
-Contents of circuit 2:  Circuit: 'simple_analog_switch'
-Circuit simple_analog_switch contains 6 device instances.
-  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   3
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   3
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hvl__inv_1'
+Circuit sky130_fd_sc_hvl__inv_1 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   1
+  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   1
 Circuit contains 6 nets.
 
-Circuit 1 contains 6 devices, Circuit 2 contains 6 devices.
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
 Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
 
 
-Contents of circuit 1:  Circuit: 'sky130_fd_sc_hvl__decap_4'
-Circuit sky130_fd_sc_hvl__decap_4 contains 2 device instances.
-  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   1
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   1
-Circuit contains 4 nets.
-Contents of circuit 2:  Circuit: 'sky130_fd_sc_hvl__decap_4'
-Circuit sky130_fd_sc_hvl__decap_4 contains 2 device instances.
-  Class: sky130_fd_pr__nfet_g5v0d10v5 instances:   1
-  Class: sky130_fd_pr__pfet_g5v0d10v5 instances:   1
-Circuit contains 4 nets.
-
-Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
-Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
-
-
-Contents of circuit 1:  Circuit: 'simple_analog_switch_ena1v8'
-Circuit simple_analog_switch_ena1v8 contains 7 device instances.
-  Class: simple_analog_switch  instances:   1
-  Class: sky130_fd_sc_hvl__inv_2 instances:   2
-  Class: sky130_fd_pr__diode_pw2nd_05v5 instances:   1
-  Class: sky130_fd_sc_hvl__decap_4 instances:   2
-  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   1
-Circuit contains 10 nets.
-Contents of circuit 2:  Circuit: 'simple_analog_switch_ena1v8'
-Circuit simple_analog_switch_ena1v8 contains 7 device instances.
-  Class: simple_analog_switch  instances:   1
-  Class: sky130_fd_sc_hvl__inv_2 instances:   2
-  Class: sky130_fd_pr__diode_pw2nd_05v5 instances:   1
-  Class: sky130_fd_sc_hvl__decap_4 instances:   2
-  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   1
-Circuit contains 10 nets.
-
-Circuit was modified by parallel/series device merging.
-New circuit summary:
-
-Contents of circuit 1:  Circuit: 'simple_analog_switch_ena1v8'
-Circuit simple_analog_switch_ena1v8 contains 6 device instances.
-  Class: simple_analog_switch  instances:   1
-  Class: sky130_fd_sc_hvl__inv_2 instances:   2
-  Class: sky130_fd_pr__diode_pw2nd_05v5 instances:   1
-  Class: sky130_fd_sc_hvl__decap_4 instances:   1
-  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   1
-Circuit contains 10 nets.
-Contents of circuit 2:  Circuit: 'simple_analog_switch_ena1v8'
-Circuit simple_analog_switch_ena1v8 contains 6 device instances.
-  Class: simple_analog_switch  instances:   1
-  Class: sky130_fd_sc_hvl__inv_2 instances:   2
-  Class: sky130_fd_pr__diode_pw2nd_05v5 instances:   1
-  Class: sky130_fd_sc_hvl__decap_4 instances:   1
-  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   1
-Circuit contains 10 nets.
+Contents of circuit 1:  Circuit: 'isolated_switch_xlarge'
+Circuit isolated_switch_xlarge contains 6 device instances.
+  Class: isolated_switch_4     instances:   1
+  Class: sky130_fd_sc_hvl__inv_1 instances:   1
+  Class: sky130_fd_pr__diode_pw2nd_05v5 instances:   2
+  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   2
+Circuit contains 11 nets.
+Contents of circuit 2:  Circuit: 'isolated_switch_xlarge'
+Circuit isolated_switch_xlarge contains 6 device instances.
+  Class: isolated_switch_4     instances:   1
+  Class: sky130_fd_sc_hvl__inv_1 instances:   1
+  Class: sky130_fd_pr__diode_pw2nd_05v5 instances:   2
+  Class: sky130_fd_sc_hvl__lsbuflv2hv_1 instances:   2
+Circuit contains 11 nets.
 
 Circuit 1 contains 6 devices, Circuit 2 contains 6 devices.
-Circuit 1 contains 10 nets,    Circuit 2 contains 10 nets.
+Circuit 1 contains 11 nets,    Circuit 2 contains 11 nets.
 
 
 Final result: 
 Circuits match uniquely.
 .
-Logging to file "simple_analog_switch_ena1v8_comp.out" disabled
+Logging to file "isolated_switch_xlarge_comp.out" disabled
 LVS Done.

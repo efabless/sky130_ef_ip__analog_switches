@@ -1,5 +1,8 @@
 #! /bin/bash
 
+echo ${PDK_ROOT:=/usr/share/pdk} > /dev/null
+echo ${PDK:=sky130A} > /dev/null
+
 magic -dnull -noconsole -rcfile \$PDK_ROOT/\$PDK/libs.tech/magic/sky130A.magicrc << EOF
 #load sky130_ef_ip__analog_switches
 load simple_analog_switch_ena1v8

@@ -1,5 +1,9 @@
 #! /bin/bash
-magic -dnull -noconsole -rcfile /usr/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc << EOF
+
+echo ${PDK_ROOT:=/usr/share/pdk} > /dev/null
+echo ${PDK:=sky130A} > /dev/null
+
+magic -dnull -noconsole -rcfile ${PDK_ROOT}/${PDK}/libs.tech/magic/${PDK}.magicrc << EOF
 load ../mag/simple_analog_switch_ena1v8
 select top cell
 expand

@@ -1,14 +1,12 @@
 #! /bin/bash
+#
+# Run layout extraction on all components of the
+# analog switch library.
 
-magic -dnull -noconsole -rcfile \$PDK_ROOT/\$PDK/libs.tech/magic/sky130A.magicrc << EOF
-load sky130_ef_ip__analog_switches
-select top cell
-extract path extfiles
-extract all
-ext2spice lvs
-ext2spice -p extfiles -o ../netlist/layout/sky130_ef_ip__analog_switches.spice
-quit -noprompt
-EOF
-rm -r extfiles
+./run_extract_lay_large.sh
+./run_extract_lay_xlarge.sh
+./run_extract_lay_isolated.sh
+./run_extract_lay_simple.sh
+
 exit 0
 

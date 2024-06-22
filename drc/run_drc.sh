@@ -1,17 +1,17 @@
 #! /bin/bash
-magic -dnull -noconsole -rcfile /usr/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc << EOF
-load ../mag/sky130_ef_ip__analog_switches
-select top cell
-expand
-drc style drc(full)
-drc on
-drc check
-drc catchup
-drc count
-set tk_version 8.5
-source \${CAD_ROOT}/magic/tcl/drcmgr.tcl
-#feedback save drc.log
-magic::drc_save_report sky130_ef_ip__analog_switches drc.log
-EOF
+#
+# Run DRC on all of the library components in the
+# analog switch library
+
+./run_drc_simple.sh
+mv drc.log drc_all.log
+./run_drc_isolated.sh
+cat drc.log >> drc_all.log
+./run_drc_large.sh
+cat drc.log >> drc_all.log
+./run_drc_xlarge.sh
+cat drc.log >> drc_all.log
+rm drc.log
+
 exit 0
 

@@ -11,14 +11,28 @@ The collection includes:
 
 Top level cells:
 ---------------------
+simple_analog_switch_ena1v8
+	Simple on/off switch with an enable ("on" pin) input in the
+	digital (1.8V) domain.  This switch has charge injection
+	mitigation.
+
 isolated_switch_onoff		
 	Ground-isolated switch with independent "on" and "off" inputs to
 	allow break-before-make switching.  Inputs are in the digital
-	(1.8V) domain.
+	(1.8V) domain.  This switch is intended for use with sample-and-hold
+	applications and has charge injection mitigation.
 
-simple_analog_switch_ena1v8
-	Simple on/off switch with an enable ("on" pin) input in the
-	digital (1.8V) domain.
+isolated_switch_large
+	Ground-isolated switch with independent "on" and "off" inputs to
+	allow break-before-make switching.  Inputs are in the digital
+	(1.8V) domain.  The switch components are large (W=24um pFET,
+	W=12um nFET), and there is no charge injection mitigation.
+
+isolated_switch_xlarge
+	Ground-isolated switch with independent "on" and "off" inputs to
+	allow break-before-make switching.  Inputs are in the digital
+	(1.8V) domain.  The switch components are very large (W=120um pFET,
+	W=60um nFET).
 
 isolated_switch_ena1v8
 	Older version of the isolated_switch_onoff with a single enable

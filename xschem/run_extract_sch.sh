@@ -1,4 +1,11 @@
 #! /bin/bash
+#
+# Run schematic extraction on all library components of the
+# analog switch library
 
-xschem -n -s -r -x -q --tcl "set lvs_netlist 1" --rcfile $PDK_ROOT/$PDK/libs.tech/xschem/xschemrc -o ../netlist/schematic -N sky130_ef_ip__analog_switches.spice sky130_ef_ip__analog_switches.sch
+./run_extract_sch_simple.sh
+./run_extract_sch_isolated.sh
+./run_extract_sch_large.sh
+./run_extract_sch_xlarge.sh
+
 
