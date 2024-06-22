@@ -11,6 +11,11 @@ The collection includes:
 
 Top level cells:
 ---------------------
+simplest_analog_switch_ena1v8
+	Simple on/off switch with an enable ("on" pin) input in the
+	digital (1.8V) domain.  This is a basic pass-gate with a
+	single nFET and pFET.
+
 simple_analog_switch_ena1v8
 	Simple on/off switch with an enable ("on" pin) input in the
 	digital (1.8V) domain.  This switch has charge injection

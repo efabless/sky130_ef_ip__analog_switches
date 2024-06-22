@@ -7,6 +7,7 @@
 ./run_extract_lay_xlarge.sh
 ./run_extract_lay_isolated.sh
 ./run_extract_lay_simple.sh
+./run_extract_lay_simplest.sh
 
 exit 0
 
