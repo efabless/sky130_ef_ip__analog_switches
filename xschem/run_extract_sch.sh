@@ -8,5 +8,6 @@
 ./run_extract_sch_isolated.sh
 ./run_extract_sch_large.sh
 ./run_extract_sch_xlarge.sh
+./run_extract_sch_mux.sh
 
 

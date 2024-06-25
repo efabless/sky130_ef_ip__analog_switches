@@ -8,6 +8,7 @@
 ./run_extract_lay_isolated.sh
 ./run_extract_lay_simple.sh
 ./run_extract_lay_simplest.sh
+./run_extract_lay_mux.sh
 
 exit 0
 

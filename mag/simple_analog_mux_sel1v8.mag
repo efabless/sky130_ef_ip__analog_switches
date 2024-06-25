@@ -1,7 +1,9 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1719257891
+timestamp 1719277428
+<< dnwell >>
+rect 170 -504 3423 -496
 << psubdiff >>
 rect 61 1640 85 1724
 rect 3514 1640 3538 1724
@@ -112,6 +114,8 @@ rect 604 1169 624 1302
 rect 1795 1169 1804 1302
 rect 604 1166 1804 1169
 rect 615 1162 837 1166
+rect 1949 -410 1985 -39
+rect 1733 -446 1985 -410
 << via1 >>
 rect 1011 3430 1198 3559
 rect 627 2677 826 2903
@@ -123,7 +127,10 @@ rect 624 1414 830 1454
 rect 830 1414 832 1454
 rect 624 1410 832 1414
 rect 624 1169 1795 1302
+rect 931 -327 1437 -224
 rect 2060 -322 3191 -198
+rect 1822 -750 3107 -652
+rect 423 -2268 1554 -2144
 << metal2 >>
 rect 1001 3559 1208 3568
 rect 1001 3430 1011 3559
@@ -162,38 +169,67 @@ rect -4 1302 3500 1310
 rect -4 1169 624 1302
 rect 1795 1169 3500 1302
 rect -4 1120 3500 1169
-rect 3196 540 3494 972
+rect -46 550 468 971
+rect 373 -1396 748 408
 rect 3197 -20 3495 412
-rect 0 -198 3482 -172
-rect 0 -322 2060 -198
-rect 3191 -322 3482 -198
-rect 0 -340 3482 -322
+rect 905 -224 1464 -201
+rect 905 -327 931 -224
+rect 1437 -327 1464 -224
+rect 905 -346 1464 -327
+rect 1319 -631 1464 -346
+rect 1584 -397 1630 -118
+rect 1721 -198 3436 -172
+rect 1721 -322 2060 -198
+rect 3191 -322 3436 -198
+rect 1721 -340 3436 -322
+rect 1319 -652 3168 -631
+rect 1319 -750 1822 -652
+rect 3107 -750 3168 -652
+rect 1319 -776 3168 -750
+rect 3 -1951 517 -1530
+rect 3261 -2121 3429 -340
+rect 19 -2144 3429 -2121
+rect 19 -2268 423 -2144
+rect 1554 -2268 3429 -2144
+rect 19 -2289 3429 -2268
 use iso_switch_via  iso_switch_via_0
-timestamp 1718245724
+timestamp 1719085816
 transform 0 1 5797 1 0 2564
 box 652 -2914 724 -2722
-use iso_switch_via#1  iso_switch_via_1
-timestamp 1718245724
+use iso_switch_via  iso_switch_via_1
+timestamp 1719085816
 transform 0 1 5380 1 0 1630
 box 652 -2914 724 -2722
-use iso_switch_via#1  iso_switch_via_2
-timestamp 1718245724
+use iso_switch_via  iso_switch_via_2
+timestamp 1719085816
 transform 0 1 5797 1 0 1635
 box 652 -2914 724 -2722
-use iso_switch_via#1  iso_switch_via_3
-timestamp 1718245724
+use iso_switch_via  iso_switch_via_3
+timestamp 1719085816
 transform -1 0 2557 0 1 4282
 box 652 -2914 724 -2722
-use iso_switch_via#1  iso_switch_via_13
-timestamp 1718245724
+use iso_switch_via  iso_switch_via_4
+timestamp 1719085816
 transform -1 0 2662 0 1 4277
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_5
+timestamp 1719085816
+transform 0 1 4411 1 0 -783
+box 652 -2914 724 -2722
+use iso_switch_via  iso_switch_via_13
+timestamp 1719085816
+transform -1 0 2301 0 1 2334
 box 652 -2914 724 -2722
 use simple_analog_switch_2  simple_analog_switch_2_0
 timestamp 1719092895
 transform 1 0 -1149 0 1 -624
 box 1209 24 4681 2170
+use simple_analog_switch_2  simple_analog_switch_2_1
+timestamp 1719092895
+transform -1 0 4742 0 1 -2564
+box 1209 24 4681 2170
 use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0 paramcells
-timestamp 1718245724
+timestamp 1719085816
 transform 1 0 239 0 1 2082
 box -183 -183 183 183
 use sky130_fd_sc_hvl__decap_4  sky130_fd_sc_hvl__decap_4_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
@@ -223,12 +259,14 @@ flabel metal1 1 2530 263 2638 0 FreeSans 800 0 0 0 dvdd
 port 6 nsew
 flabel metal1 0 3479 263 3627 0 FreeSans 800 0 0 0 dvss
 port 7 nsew
-flabel metal1 2 2041 182 2130 0 FreeSans 800 0 0 0 on
-port 8 nsew
-flabel metal2 0 -340 156 -194 0 FreeSans 800 0 0 0 avss
-port 5 nsew
-flabel metal2 3308 772 3494 972 0 FreeSans 800 0 0 0 in
-port 2 nsew
 flabel metal2 3308 -19 3494 180 0 FreeSans 800 0 0 0 out
 port 3 nsew
+flabel metal2 19 -2289 175 -2143 0 FreeSans 800 0 0 0 avss
+port 5 nsew
+flabel metal2 -8 744 178 944 0 FreeSans 800 0 0 0 inA
+port 2 nsew
+flabel metal2 46 -1780 232 -1580 0 FreeSans 800 0 0 0 inB
+port 9 nsew
+flabel metal1 2 2041 182 2130 0 FreeSans 800 0 0 0 selA
+port 8 nsew
 << end >>
