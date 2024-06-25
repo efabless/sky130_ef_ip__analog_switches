@@ -189,11 +189,11 @@ rect 726 -3580 5160 -3531
 rect 726 -3695 3419 -3580
 rect 5008 -3695 5160 -3580
 rect 726 -3726 5160 -3695
-use iso_switch_via#0  iso_switch_via_0
+use iso_switch_via  iso_switch_via_0
 timestamp 1719085816
 transform 1 0 2678 0 1 1634
 box 652 -2914 724 -2722
-use iso_switch_via#0  iso_switch_via_1
+use iso_switch_via  iso_switch_via_1
 timestamp 1719085816
 transform 1 0 2846 0 1 1635
 box 652 -2914 724 -2722

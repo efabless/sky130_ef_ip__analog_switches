@@ -172,19 +172,19 @@ use iso_switch_via  iso_switch_via_0
 timestamp 1718245724
 transform 0 1 5797 1 0 2564
 box 652 -2914 724 -2722
-use iso_switch_via#1  iso_switch_via_1
+use iso_switch_via  iso_switch_via_1
 timestamp 1718245724
 transform 0 1 5380 1 0 1630
 box 652 -2914 724 -2722
-use iso_switch_via#1  iso_switch_via_2
+use iso_switch_via  iso_switch_via_2
 timestamp 1718245724
 transform 0 1 5797 1 0 1635
 box 652 -2914 724 -2722
-use iso_switch_via#1  iso_switch_via_3
+use iso_switch_via  iso_switch_via_3
 timestamp 1718245724
 transform -1 0 2557 0 1 4282
 box 652 -2914 724 -2722
-use iso_switch_via#1  iso_switch_via_13
+use iso_switch_via  iso_switch_via_13
 timestamp 1718245724
 transform -1 0 2662 0 1 4277
 box 652 -2914 724 -2722
