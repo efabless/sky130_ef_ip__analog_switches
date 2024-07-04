@@ -22,19 +22,19 @@ jobs:
 
       # Run CACE on the design
       - name: Run CACE for simplest_analog_switch_ena1v8
-        uses: efabless/cace-action@update
+        uses: efabless/cace-action@main
         with:
           pdk_family: 'sky130'
           cace_datasheet: 'cace/simplest_analog_switch_ena1v8.yaml'
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Run CACE for simple_analog_switch_ena1v8
-        uses: efabless/cace-action@update
+        uses: efabless/cace-action@main
         with:
           pdk_family: 'sky130'
           cace_datasheet: 'cace/simple_analog_switch_ena1v8.yaml'
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Run CACE for isolated_switch_ena1v8
-        uses: efabless/cace-action@update
+        uses: efabless/cace-action@main
         with:
           pdk_family: 'sky130'
           cace_datasheet: 'cace/isolated_switch_ena1v8.yaml'
