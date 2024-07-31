@@ -127,7 +127,6 @@ C {devices/launcher.sym} 500 560 0 0 {name=h2
 descr="Load waves DC" 
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw dc
-
 "
 }
 C {devices/vsource.sym} 210 120 0 0 {name=V1 value=0 savecurrent=false}
@@ -172,7 +171,7 @@ value="
 
     *write simplest_analog_switch_ena1v8_tb.raw
 
-    echo $&r_switch_max > \\\{simpath\\\}/\\\{filename\\\}_\\\{N\\\}.data
+    echo $&r_switch_max > \{simpath\}/\{filename\}_\{N\}.data
 .endc
 "}
 C {devices/vsource.sym} 160 340 0 0 {name=VIN value="ac 1" savecurrent=false}

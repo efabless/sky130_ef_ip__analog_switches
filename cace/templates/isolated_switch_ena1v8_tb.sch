@@ -171,7 +171,7 @@ value="
 
     *write simplest_analog_switch_ena1v8_tb.raw
 
-    echo $&r_switch_max > \\\{simpath\\\}/\\\{filename\\\}_\\\{N\\\}.data
+    echo $&r_switch_max > \{simpath\}/\{filename\}_\{N\}.data
 .endc
 "}
 C {devices/vsource.sym} 160 340 0 0 {name=VIN value="ac 1" savecurrent=false}
