@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1719091984
+timestamp 1719611012
 << dnwell >>
 rect 683 -653 5288 1461
 rect 683 -659 2069 -653
@@ -184,8 +184,8 @@ rect 3278 327 3360 501
 rect 3179 319 3360 327
 rect 3450 235 3647 584
 rect 961 43 4813 235
-rect 4886 -17 5062 -9
-rect 961 -209 5062 -17
+rect 4886 -13 5062 -9
+rect 961 -205 5062 -13
 rect 726 -380 5160 -331
 rect 726 -495 3419 -380
 rect 5008 -495 5160 -380
@@ -379,7 +379,7 @@ timestamp 1719083619
 transform -1 0 4282 0 1 797
 box -673 -458 673 458
 << labels >>
-flabel metal2 4886 -209 5062 -9 0 FreeSans 256 180 0 0 out
+flabel metal2 4886 -205 5062 -9 0 FreeSans 256 180 0 0 out
 port 3 nsew
 flabel metal2 4886 823 5062 1023 0 FreeSans 256 0 0 0 in
 port 4 nsew
