@@ -26,10 +26,6 @@ XXM15 in out in vss on on on on in out sky130_fd_pr__nfet_g5v0d10v5_N9BQ2J
 XXM4 out off off off in in off vdd out out off off in off off out out in sky130_fd_pr__pfet_g5v0d10v5_KLJ6Y6
 .ends
 
-.subckt sky130_fd_pr__diode_pw2nd_05v5_FT76RJ a_n147_n147# a_n45_n45#
-X0 a_n147_n147# a_n45_n45# sky130_fd_pr__diode_pw2nd_05v5 perim=1.8e+06 area=2.025e+11
-.ends
-
 .subckt sky130_fd_sc_hvl__inv_2 A VGND VNB VPB VPWR Y
 X0 VPWR A Y VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.4275 pd=3.57 as=0.21 ps=1.78 w=1.5 l=0.5
 X1 Y A VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.105 pd=1.03 as=0.21375 ps=2.07 w=0.75 l=0.5
@@ -60,6 +56,10 @@ X18 a_1197_107# a_772_151# VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21 pd=1.78
 X19 VPWR a_504_1221# a_1197_107# VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.1113 pd=1.37 as=0.1365 ps=1.49 w=0.42 l=1
 .ends
 
+.subckt sky130_fd_sc_hvl__diode_2 DIODE VGND VNB VPB VPWR
+X0 VNB DIODE sky130_fd_pr__diode_pw2nd_11v0 perim=3.16e+06 area=6.072e+11
+.ends
+
 .subckt sky130_fd_sc_hvl__decap_4 VGND VNB VPB VPWR
 X0 VGND VPWR VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.19875 pd=2.03 as=0.4125 ps=4.1 w=0.75 l=1
 X1 VPWR VGND VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.265 pd=2.53 as=0.55 ps=5.1 w=1 l=1
@@ -68,13 +68,13 @@ X1 VPWR VGND VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.265 pd=2.53 as=0.55 ps=5
 .subckt simplest_analog_switch_ena1v8 in out avdd avss dvdd dvss on
 Xsimple_analog_switch_2_0 sky130_fd_sc_hvl__inv_2_0/Y sky130_fd_sc_hvl__inv_2_1/Y
 + out in avdd avss simple_analog_switch_2
-Xsky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0 dvss on sky130_fd_pr__diode_pw2nd_05v5_FT76RJ
 Xsky130_fd_sc_hvl__inv_2_0 sky130_fd_sc_hvl__inv_2_1/Y dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_0/Y
 + sky130_fd_sc_hvl__inv_2
 Xsky130_fd_sc_hvl__inv_2_1 sky130_fd_sc_hvl__inv_2_1/A dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_1/Y
 + sky130_fd_sc_hvl__inv_2
 Xsky130_fd_sc_hvl__lsbuflv2hv_1_0 on dvdd dvss dvss avdd avdd sky130_fd_sc_hvl__inv_2_1/A
 + sky130_fd_sc_hvl__lsbuflv2hv_1
+Xsky130_fd_sc_hvl__diode_2_0 on dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__decap_4_0 dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
 Xsky130_fd_sc_hvl__decap_4_1 dvss dvss avdd avdd sky130_fd_sc_hvl__decap_4
 .ends

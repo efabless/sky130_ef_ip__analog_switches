@@ -1,4 +1,4 @@
-** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_ef_ip__cdac3v_12bit/dependencies/sky130_ef_ip__analog_switches/xschem/minimal_n_switch_ena1v8.sch
+** sch_path: /home/tim/gits/sky130_ef_ip__analog_switches/xschem/minimal_n_switch_ena1v8.sch
 .subckt minimal_n_switch_ena1v8 avss on out in avdd dvdd dvss
 *.PININFO on:I out:B in:B avdd:B dvdd:B dvss:B avss:B
 x2 on dvdd dvss dvss avdd avdd net2 sky130_fd_sc_hvl__lsbuflv2hv_1
@@ -10,8 +10,8 @@ x5 on dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 .ends
 
 * expanding   symbol:  minimum_analog_switch.sym # of pins=6
-** sym_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_ef_ip__cdac3v_12bit/dependencies/sky130_ef_ip__analog_switches/xschem/minimum_analog_switch.sym
-** sch_path: /home/tim/gits/cheetah_v3_analog/dependencies/sky130_ef_ip__cdac3v_12bit/dependencies/sky130_ef_ip__analog_switches/xschem/minimum_analog_switch.sch
+** sym_path: /home/tim/gits/sky130_ef_ip__analog_switches/xschem/minimum_analog_switch.sym
+** sch_path: /home/tim/gits/sky130_ef_ip__analog_switches/xschem/minimum_analog_switch.sch
 .subckt minimum_analog_switch off on out in vdd vss
 *.PININFO on:I out:B vss:B in:B off:I vdd:B
 XM3 in off in vss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=0.5 nf=1 m=1

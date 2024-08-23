@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1722435879
+timestamp 1724441501
 << psubdiff >>
 rect 41 1640 65 1724
 rect 4354 1640 4378 1724
@@ -25,20 +25,14 @@ rect 2851 2348 3091 2354
 rect 2851 2296 2867 2348
 rect 3075 2296 3091 2348
 rect 2851 2288 3091 2296
-rect 352 2048 408 2056
-rect 352 1964 360 2048
-rect 398 1994 408 2048
-rect 398 1964 492 1994
-rect 352 1960 492 1964
-rect 352 1954 408 1960
 rect 49 1640 65 1724
 rect 4354 1640 4370 1724
 << viali >>
 rect 2890 3230 3085 3275
+rect 371 2164 418 2352
 rect 770 2337 982 2379
 rect 2460 2295 2668 2347
 rect 2867 2296 3075 2348
-rect 360 1964 398 2048
 rect 1009 1640 1199 1724
 << metal1 >>
 rect 0 3604 498 3627
@@ -55,7 +49,7 @@ rect 3085 3230 3111 3275
 rect 2869 3221 3111 3230
 rect 615 2903 837 2916
 rect 615 2868 627 2903
-rect 491 2730 627 2868
+rect 299 2730 627 2868
 rect 615 2677 627 2730
 rect 826 2868 837 2903
 rect 1804 2903 2027 2916
@@ -72,11 +66,13 @@ rect 1 2581 517 2638
 rect 1 2530 263 2581
 rect 756 2379 996 2392
 rect 756 2365 770 2379
-rect 403 2337 770 2365
+rect 351 2352 770 2365
+rect 351 2189 371 2352
+rect 212 2164 371 2189
+rect 418 2337 770 2352
 rect 982 2337 996 2379
-rect 403 2329 996 2337
-rect 2 2129 289 2130
-rect 403 2129 439 2329
+rect 418 2329 996 2337
+rect 418 2164 439 2329
 rect 756 2324 996 2329
 rect 2444 2347 2684 2353
 rect 2444 2295 2460 2347
@@ -86,13 +82,11 @@ rect 2851 2348 3091 2354
 rect 2851 2296 2867 2348
 rect 3075 2296 3091 2348
 rect 2851 2288 3091 2296
-rect 2 2093 439 2129
-rect 2 2041 289 2093
-rect 348 2048 3468 2056
-rect 348 1964 360 2048
-rect 398 1980 3468 2048
-rect 398 1964 496 1980
-rect 348 1954 496 1964
+rect 212 2153 439 2164
+rect 212 2130 256 2153
+rect 2 2041 256 2130
+rect 348 1980 3468 2056
+rect 348 1954 496 1980
 rect 996 1724 1213 1735
 rect 996 1640 1009 1724
 rect 1199 1640 1213 1724
@@ -177,28 +171,32 @@ use simple_analog_switch  simple_analog_switch_0
 timestamp 1722435879
 transform 1 0 -577 0 1 -24
 box 577 24 4997 1570
-use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  sky130_fd_pr__diode_pw2nd_05v5_FT76RJ_0 paramcells
-timestamp 1719085816
-transform 1 0 239 0 1 2082
-box -183 -183 183 183
 use sky130_fd_sc_hvl__decap_4  sky130_fd_sc_hvl__decap_4_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 3083 0 -1 3605
 box -66 -43 450 897
 use sky130_fd_sc_hvl__decap_4  sky130_fd_sc_hvl__decap_4_1
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 3083 0 1 1977
 box -66 -43 450 897
+use sky130_fd_sc_hvl__diode_2  sky130_fd_sc_hvl__diode_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
+timestamp 1723858470
+transform 1 0 299 0 1 1977
+box -66 -43 258 897
+use sky130_fd_sc_hvl__fill_2  sky130_fd_sc_hvl__fill_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
+timestamp 1723858470
+transform 1 0 299 0 -1 3605
+box -66 -43 258 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 2603 0 1 1977
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_2  sky130_fd_sc_hvl__inv_2_1
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 2603 0 -1 3605
 box -66 -43 546 897
 use sky130_fd_sc_hvl__lsbuflv2hv_1  sky130_fd_sc_hvl__lsbuflv2hv_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
-timestamp 1715205430
+timestamp 1723858470
 transform 1 0 491 0 1 1977
 box -66 -43 2178 1671
 << labels >>

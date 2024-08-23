@@ -2,11 +2,11 @@
 .subckt isolated_switch_onoff avss on out in avdd dvdd dvss off
 *.PININFO on:I avss:B out:B in:B avdd:B dvdd:B dvss:B off:I
 x2 on dvdd dvss dvss avdd avdd net1 sky130_fd_sc_hvl__lsbuflv2hv_1
-XD1 dvss on sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
 x1 net1 net2 avss out in avdd net3 isolated_switch_2
 x3 off dvdd dvss dvss avdd avdd net3 sky130_fd_sc_hvl__lsbuflv2hv_1
-XD2 dvss off sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
 x4 net1 dvss dvss avdd avdd net2 sky130_fd_sc_hvl__inv_1
+x5 on dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+x6 off dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 .ends
 
 * expanding   symbol:  isolated_switch_2.sym # of pins=7

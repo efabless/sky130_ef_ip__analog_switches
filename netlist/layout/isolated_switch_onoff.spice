@@ -23,8 +23,8 @@ X18 a_1197_107# a_772_151# VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21 pd=1.78
 X19 VPWR a_504_1221# a_1197_107# VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.1113 pd=1.37 as=0.1365 ps=1.49 w=0.42 l=1
 .ends
 
-.subckt sky130_fd_pr__diode_pw2nd_05v5_FT76RJ a_n147_n147# a_n45_n45#
-X0 a_n147_n147# a_n45_n45# sky130_fd_pr__diode_pw2nd_05v5 perim=1.8e+06 area=2.025e+11
+.subckt sky130_fd_sc_hvl__diode_2 DIODE VGND VNB VPB VPWR
+X0 VNB DIODE sky130_fd_pr__diode_pw2nd_11v0 perim=3.16e+06 area=6.072e+11
 .ends
 
 .subckt sky130_fd_sc_hvl__inv_1 A VGND VNB VPB VPWR Y
@@ -79,8 +79,8 @@ XXM11 m2_961_43# on on vss in m2_961_43# sky130_fd_pr__nfet_g5v0d10v5_EJGQFX
 .subckt isolated_switch_onoff avss on out in avdd dvdd dvss off
 Xx2 off dvdd dvss dvss avdd avdd x2/X sky130_fd_sc_hvl__lsbuflv2hv_1
 Xx3 on dvdd dvss dvss avdd avdd x3/X sky130_fd_sc_hvl__lsbuflv2hv_1
-XXD1 dvss off sky130_fd_pr__diode_pw2nd_05v5_FT76RJ
-XXD2 dvss on sky130_fd_pr__diode_pw2nd_05v5_FT76RJ
+Xsky130_fd_sc_hvl__diode_2_0 on dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
+Xsky130_fd_sc_hvl__diode_2_1 off dvss dvss avdd avdd sky130_fd_sc_hvl__diode_2
 Xsky130_fd_sc_hvl__inv_1_0 x3/X dvss dvss avdd avdd isolated_switch_2h_0/off sky130_fd_sc_hvl__inv_1
 Xisolated_switch_2h_0 x3/X isolated_switch_2h_0/off out in avdd x2/X avss isolated_switch_2h
 .ends

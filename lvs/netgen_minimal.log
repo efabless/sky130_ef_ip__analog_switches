@@ -1,4 +1,4 @@
-Netgen 1.5.273 compiled on Tue May 14 15:25:31 EDT 2024
+Netgen 1.5.273 compiled on Fri Aug 16 17:57:09 EDT 2024
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
 Call to undefined subcircuit sky130_fd_pr__nfet_g5v0d10v5
@@ -32,7 +32,7 @@ Creating placeholder cell definition.
 Call to undefined subcircuit minimum_analog_switch
 Creating placeholder cell definition.
 
-Reading setup file /usr/local/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
+Reading setup file /usr/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
 
 Model sky130_fd_pr__res_generic_nd__hv pin 1 == 2
 No property value found for device sky130_fd_pr__res_generic_nd__hv
@@ -167,6 +167,11 @@ No property value found for device sky130_fd_pr__diode_pw2nd_11v0
 No property mult found for device sky130_fd_pr__diode_pw2nd_11v0
 Comparison output logged to file minimal_n_switch_ena1v8_comp.out
 Logging to file "minimal_n_switch_ena1v8_comp.out" enabled
+Circuit sky130_fd_pr__nfet_g5v0d10v5 contains no devices.
+Circuit sky130_fd_pr__pfet_g5v0d10v5 contains no devices.
+Circuit sky130_fd_pr__nfet_01v8 contains no devices.
+Circuit sky130_fd_pr__pfet_01v8_hvt contains no devices.
+Circuit sky130_fd_pr__diode_pw2nd_11v0 contains no devices.
 
 Contents of circuit 1:  Circuit: 'minimum_analog_switch'
 Circuit minimum_analog_switch contains 4 device instances.

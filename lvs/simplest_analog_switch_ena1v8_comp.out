@@ -29,19 +29,6 @@ Circuit 1: sky130_fd_pr__pfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__pfet_g5v0d1
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_g5v0d10v5 and sky130_fd_pr__pfet_g5v0d10v5 are equivalent.
 
-Circuit 1 cell sky130_fd_pr__diode_pw2nd_05v5 and Circuit 2 cell sky130_fd_pr__diode_pw2nd_05v5 are black boxes.
-Warning: Equate pins:  cell sky130_fd_pr__diode_pw2nd_05v5 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__diode_pw2nd_05v5 is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_pr__diode_pw2nd_05v5  |Circuit 2: sky130_fd_pr__diode_pw2nd_05v5  
--------------------------------------------|-------------------------------------------
-1                                          |1                                          
-2                                          |2                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes sky130_fd_pr__diode_pw2nd_05v5 and sky130_fd_pr__diode_pw2nd_05v5 are equivalent.
-
 Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
 Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
@@ -71,6 +58,19 @@ Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_h
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__diode_pw2nd_11v0 and Circuit 2 cell sky130_fd_pr__diode_pw2nd_11v0 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__diode_pw2nd_11v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__diode_pw2nd_11v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__diode_pw2nd_11v0  |Circuit 2: sky130_fd_pr__diode_pw2nd_11v0  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__diode_pw2nd_11v0 and sky130_fd_pr__diode_pw2nd_11v0 are equivalent.
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_N9BQ2J in circuit simple_analog_switch_2 (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_KLJ6Y6 in circuit simple_analog_switch_2 (0)(1 instance)
 
@@ -153,6 +153,33 @@ VNB                                        |VNB
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hvl__lsbuflv2hv_1 and sky130_fd_sc_hvl__lsbuflv2hv_1 are equivalent.
 
+Cell sky130_fd_sc_hvl__diode_2 (0) disconnected node: VGND
+Cell sky130_fd_sc_hvl__diode_2 (0) disconnected node: VPB
+Cell sky130_fd_sc_hvl__diode_2 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hvl__diode_2 (1) disconnected node: VGND
+Cell sky130_fd_sc_hvl__diode_2 (1) disconnected node: VPB
+Cell sky130_fd_sc_hvl__diode_2 (1) disconnected node: VPWR
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hvl__diode_2       |Circuit 2: sky130_fd_sc_hvl__diode_2       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__diode_pw2nd_11v0 (1)         |sky130_fd_pr__diode_pw2nd_11v0 (1)         
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 2                          |Number of nets: 2                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hvl__diode_2       |Circuit 2: sky130_fd_sc_hvl__diode_2       
+-------------------------------------------|-------------------------------------------
+VNB                                        |VNB                                        
+DIODE                                      |DIODE                                      
+VGND                                       |VGND                                       
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hvl__diode_2 and sky130_fd_sc_hvl__diode_2 are equivalent.
+
 Subcircuit summary:
 Circuit 1: sky130_fd_sc_hvl__decap_4       |Circuit 2: sky130_fd_sc_hvl__decap_4       
 -------------------------------------------|-------------------------------------------
@@ -173,7 +200,6 @@ VPWR                                       |VPWR
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hvl__decap_4 and sky130_fd_sc_hvl__decap_4 are equivalent.
-Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_FT76RJ in circuit simplest_analog_switch_ena1v8 (0)(1 instance)
 
 Class simplest_analog_switch_ena1v8 (0):  Merged 1 parallel devices.
 Class simplest_analog_switch_ena1v8 (1):  Merged 1 parallel devices.
@@ -181,9 +207,9 @@ Subcircuit summary:
 Circuit 1: simplest_analog_switch_ena1v8   |Circuit 2: simplest_analog_switch_ena1v8   
 -------------------------------------------|-------------------------------------------
 simple_analog_switch_2 (1)                 |simple_analog_switch_2 (1)                 
-sky130_fd_pr__diode_pw2nd_05v5 (1)         |sky130_fd_pr__diode_pw2nd_05v5 (1)         
 sky130_fd_sc_hvl__inv_2 (2)                |sky130_fd_sc_hvl__inv_2 (2)                
 sky130_fd_sc_hvl__lsbuflv2hv_1 (1)         |sky130_fd_sc_hvl__lsbuflv2hv_1 (1)         
+sky130_fd_sc_hvl__diode_2 (1)              |sky130_fd_sc_hvl__diode_2 (1)              
 sky130_fd_sc_hvl__decap_4 (2->1)           |sky130_fd_sc_hvl__decap_4 (2->1)           
 Number of devices: 6                       |Number of devices: 6                       
 Number of nets: 10                         |Number of nets: 10                         

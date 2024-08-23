@@ -59,18 +59,18 @@ Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_h
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
 
-Circuit 1 cell sky130_fd_pr__diode_pw2nd_05v5 and Circuit 2 cell sky130_fd_pr__diode_pw2nd_05v5 are black boxes.
-Warning: Equate pins:  cell sky130_fd_pr__diode_pw2nd_05v5 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__diode_pw2nd_05v5 is a placeholder, treated as a black box.
+Circuit 1 cell sky130_fd_pr__diode_pw2nd_11v0 and Circuit 2 cell sky130_fd_pr__diode_pw2nd_11v0 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__diode_pw2nd_11v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__diode_pw2nd_11v0 is a placeholder, treated as a black box.
 
 Subcircuit pins:
-Circuit 1: sky130_fd_pr__diode_pw2nd_05v5  |Circuit 2: sky130_fd_pr__diode_pw2nd_05v5  
+Circuit 1: sky130_fd_pr__diode_pw2nd_11v0  |Circuit 2: sky130_fd_pr__diode_pw2nd_11v0  
 -------------------------------------------|-------------------------------------------
 1                                          |1                                          
 2                                          |2                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes sky130_fd_pr__diode_pw2nd_05v5 and sky130_fd_pr__diode_pw2nd_05v5 are equivalent.
+Device classes sky130_fd_pr__diode_pw2nd_11v0 and sky130_fd_pr__diode_pw2nd_11v0 are equivalent.
 
 Class sky130_fd_sc_hvl__lsbuflv2hv_1 (0):  Merged 8 parallel devices.
 Class sky130_fd_sc_hvl__lsbuflv2hv_1 (1):  Merged 8 parallel devices.
@@ -130,6 +130,33 @@ out                                        |out
 Cell pin lists are equivalent.
 Device classes isolated_switch_4 and isolated_switch_4 are equivalent.
 
+Cell sky130_fd_sc_hvl__diode_2 (0) disconnected node: VGND
+Cell sky130_fd_sc_hvl__diode_2 (0) disconnected node: VPB
+Cell sky130_fd_sc_hvl__diode_2 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hvl__diode_2 (1) disconnected node: VGND
+Cell sky130_fd_sc_hvl__diode_2 (1) disconnected node: VPB
+Cell sky130_fd_sc_hvl__diode_2 (1) disconnected node: VPWR
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hvl__diode_2       |Circuit 2: sky130_fd_sc_hvl__diode_2       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__diode_pw2nd_11v0 (1)         |sky130_fd_pr__diode_pw2nd_11v0 (1)         
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 2                          |Number of nets: 2                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hvl__diode_2       |Circuit 2: sky130_fd_sc_hvl__diode_2       
+-------------------------------------------|-------------------------------------------
+VNB                                        |VNB                                        
+DIODE                                      |DIODE                                      
+VGND                                       |VGND                                       
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hvl__diode_2 and sky130_fd_sc_hvl__diode_2 are equivalent.
+
 Subcircuit summary:
 Circuit 1: sky130_fd_sc_hvl__inv_1         |Circuit 2: sky130_fd_sc_hvl__inv_1         
 -------------------------------------------|-------------------------------------------
@@ -152,14 +179,13 @@ Y                                          |Y
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hvl__inv_1 and sky130_fd_sc_hvl__inv_1 are equivalent.
-Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_FT76RJ in circuit isolated_switch_xlarge (0)(2 instances)
 
 Subcircuit summary:
 Circuit 1: isolated_switch_xlarge          |Circuit 2: isolated_switch_xlarge          
 -------------------------------------------|-------------------------------------------
 sky130_fd_sc_hvl__lsbuflv2hv_1 (2)         |sky130_fd_sc_hvl__lsbuflv2hv_1 (2)         
 isolated_switch_4 (1)                      |isolated_switch_4 (1)                      
-sky130_fd_pr__diode_pw2nd_05v5 (2)         |sky130_fd_pr__diode_pw2nd_05v5 (2)         
+sky130_fd_sc_hvl__diode_2 (2)              |sky130_fd_sc_hvl__diode_2 (2)              
 sky130_fd_sc_hvl__inv_1 (1)                |sky130_fd_sc_hvl__inv_1 (1)                
 Number of devices: 6                       |Number of devices: 6                       
 Number of nets: 11                         |Number of nets: 11                         
