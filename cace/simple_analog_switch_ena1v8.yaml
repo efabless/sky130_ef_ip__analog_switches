@@ -9,7 +9,7 @@ description:    >
   mitigation.
 PDK:            sky130A
 
-cace_format:    5.0
+cace_format:    5.2
 
 authorship:
   designer:         Tim Edwards
@@ -23,13 +23,12 @@ paths:
   magic:            mag
   layout:           gds
   netlist:          netlist
-  documentation:    doc
+  documentation:    docs
 
 pins:
   dvdd:
     description: Digital power supply
     type: power
-    type: ground
   dvss:
     description: Digital ground
     type: ground
@@ -39,8 +38,7 @@ pins:
   avss:
     description: Analog ground
     type: ground
-    direction: input
-  "on":
+  on:
     description: Enable the switch
     type: signal
     direction: input
@@ -86,14 +84,15 @@ parameters:
     display: R_on
     unit: Ohm
     spec:
-      maximum:
-        value: any
+      r_on:
+        maximum:
+          value: any
     tool:
       ngspice:
         template: simple_analog_switch_ena1v8_tb.sch
         format: ascii
         suffix: .data
-        variables: [result]
+        variables: [r_on]
     conditions:
       corner:
         enumerate: [tt, ff, ss] # fs, sf
@@ -102,42 +101,36 @@ parameters:
         typical: 27
         maximum: 130
 
-  area:
-    description: Total circuit layout area
-    display: Area
-    unit: µm²
+  magic_area:
     spec:
-      maximum:
-        value: any
+      area:
+        display: Area
+        description: Total circuit layout area
+        unit: µm²
+        maximum:
+          value: any
+      width:
+        display: Width
+        description: Total circuit layout width
+        unit: µm
+        maximum:
+          value: any
+      height:
+        display: Height
+        description: Total circuit layout height
+        unit: µm
+        maximum:
+          value: any
     tool:
       magic_area
-
-  width:
-    description: Total circuit layout width
-    display: Width
-    unit: µm
-    spec:
-      maximum:
-        value: any
-    tool:
-      magic_width
-
-  height:
-    description: Total circuit layout height
-    display: Height
-    unit: µm
-    spec:
-      maximum:
-        value: any
-    tool:
-      magic_height
 
   magic_drc:
     description: Magic DRC
     display: Magic DRC
     spec:
-      maximum:
-        value: 0
+      drc_errors:
+        maximum:
+          value: 0
     tool:
       magic_drc
 
@@ -145,38 +138,20 @@ parameters:
     description: Netgen LVS
     display: Netgen LVS
     spec:
-      maximum:
-        value: 0
+      lvs_errors:
+        maximum:
+          value: 0
     tool:
       netgen_lvs:
-        script: run_project_lvs.tcl
-
-  klayout_drc_feol:
-    description: KLayout DRC feol
-    display: KLayout DRC feol
-    spec:
-      maximum:
-        value: 0
-    tool:
-        klayout_drc:
-            args: ['-rd', 'feol=true']
-
-  klayout_drc_beol:
-    description: KLayout DRC beol
-    display: KLayout DRC beol
-    spec:
-      maximum:
-        value: 0
-    tool:
-        klayout_drc:
-            args: ['-rd', 'beol=true']
+        script: simple_analog_switch_ena1v8_lvs.tcl
 
   klayout_drc_full:
     description: KLayout DRC full
     display: KLayout DRC full
     spec:
-      maximum:
-        value: 0
+      drc_errors:
+        maximum:
+          value: 0
     tool:
         klayout_drc:
             args: ['-rd', 'feol=true', '-rd', 'beol=true', '-rd', 'offgrid=true']
