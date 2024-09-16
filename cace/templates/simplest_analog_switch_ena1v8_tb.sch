@@ -116,7 +116,7 @@ lab=OUT}
 C {simplest_analog_switch_ena1v8.sym} 570 360 0 0 {name=x1}
 C {devices/vsource.sym} 50 120 0 0 {name=V0 value=0 savecurrent=false}
 C {devices/gnd.sym} 50 190 0 0 {name=l3 lab=GND}
-C {devices/vsource.sym} 130 120 0 0 {name=V2 value=1.8 savecurrent=false}
+C {devices/vsource.sym} 130 120 0 0 {name=V2 value=CACE\{dvdd\} savecurrent=false}
 C {devices/lab_wire.sym} 50 50 0 0 {name=p1 sig_type=std_logic lab=DVSS}
 C {devices/lab_wire.sym} 130 50 0 0 {name=p5 sig_type=std_logic lab=DVDD}
 C {devices/launcher.sym} 500 520 0 0 {name=h1
@@ -130,26 +130,26 @@ xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]
 "
 }
 C {devices/vsource.sym} 210 120 0 0 {name=V1 value=0 savecurrent=false}
-C {devices/vsource.sym} 290 120 0 0 {name=V3 value=\{avdd\} savecurrent=false}
+C {devices/vsource.sym} 290 120 0 0 {name=V3 value=CACE\{avdd\} savecurrent=false}
 C {devices/lab_wire.sym} 210 50 0 0 {name=p2 sig_type=std_logic lab=AVSS}
 C {devices/lab_wire.sym} 290 50 0 0 {name=p3 sig_type=std_logic lab=AVDD}
 C {devices/lab_wire.sym} 720 330 0 1 {name=p4 sig_type=std_logic lab=DVSS}
 C {devices/lab_wire.sym} 720 310 0 1 {name=p6 sig_type=std_logic lab=DVDD}
 C {devices/lab_wire.sym} 720 350 0 1 {name=p7 sig_type=std_logic lab=AVSS}
 C {devices/lab_wire.sym} 720 410 0 1 {name=p8 sig_type=std_logic lab=AVDD}
-C {devices/vsource.sym} 370 120 0 0 {name=V4 value="[\{dvdd\} * \{enable\}]" savecurrent=false}
+C {devices/vsource.sym} 370 120 0 0 {name=V4 value="CACE[CACE\{dvdd\} * CACE\{enable\}]" savecurrent=false}
 C {devices/lab_wire.sym} 370 50 0 0 {name=p9 sig_type=std_logic lab=ON}
 C {devices/code_shown.sym} 1000 140 0 0 {name=SETUP
 simulator=ngspice
 only_toplevel=false
 value="
-.lib \{PDK_ROOT\}/\{PDK\}/libs.tech/combined/sky130.lib.spice \{corner\}
+.lib CACE\{PDK_ROOT\}/CACE\{PDK\}/libs.tech/combined/sky130.lib.spice CACE\{corner\}
 
-.include \{PDK_ROOT\}/\{PDK\}/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
+.include CACE\{PDK_ROOT\}/CACE\{PDK\}/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
 
-.include \{DUT_path\}
+.include CACE\{DUT_path\}
 
-.temp \{temperature\}
+.temp CACE\{temperature\}
 "}
 C {devices/code_shown.sym} 1000 360 0 0 {name=CONTROL
 simulator=ngspice
@@ -164,14 +164,14 @@ value="
     *set appendwrite
 
     * run dc simulation
-    dc vin 0 \{avdd\} \{step\}
+    dc vin 0 CACE\{avdd\} CACE\{step\}
     let r_switch = (v(in)-v(out))/-i(vin)
 
     meas DC r_switch_max max r_switch
 
     *write simplest_analog_switch_ena1v8_tb.raw
 
-    echo $&r_switch_max > \{simpath\}/\{filename\}_\{N\}.data
+    echo $&r_switch_max > CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.data
 .endc
 "}
 C {devices/vsource.sym} 160 340 0 0 {name=VIN value="ac 1" savecurrent=false}
